@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.heading-1{
+    font-weight: bold;
+    font-family: sans-serif;
+    display: inline-block;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 10px;
+    transform: translate(-1200px,0);
+    animation: heading-1 2s forwards;
+
+}
+@keyframes heading-1{
+    to{
+        transform: translate(0);
+    }
+}

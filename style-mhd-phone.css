@@ -1,0 +1,11 @@
+@media (max-width:1082px){
+    .para-page-2 , .para-page-3 , .para-page-4{
+        flex-direction: column;
+    }
+    .para-page-2 img , .para-page-3 img , .para-page-4 img{
+        height: 60%;
+        width: 60%;
+        object-fit: cover;
+    
+    }
+}

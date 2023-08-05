@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-mhd.css">
+    <link rel="stylesheet" href="style-mhd-phone.css">
+    <title>presentation</title>
+</head>
+
+<body>
+    <!-- page 1 -->
+    <section id="page-1" class="page">
+        <h1>welcome to my mini project :) </h1>
+        <p>so in this project , I've used basic Animation properties by using transform property and keyframes . in the next pages I've written some of them with values</p>
+        <div>
+            <a href="#page-2" class="btn">Next Page<ion-icon name="arrow-down-outline" class="btn-icon"></ion-icon></a>
+        </div>
+
+    </section>
+
+
+    <!-- page 2 -->
+    <section id="page-2" class="page">
+        <h1>transform property</h1>
+        <div class="para-page-2">
+        <p>we should first hide the element we want to be animated . so to do that we use transform property for that element. note that it's common to use at least 1200px in Y-axis or more than that in X-axis , to make sure part of the words not appear on the screen</p>
+        <img src="page 2.png" alt="">
+    </div>
+        <div>
+            <a href="#page-1" class="btn btn-dark">Prev Page <ion-icon name="arrow-up-outline"
+                    class="btn-icon"></ion-icon></a>
+            <a href="#page-3" class="btn">Next Page <ion-icon name="arrow-down-outline" class="btn-icon"></ion-icon></a>
+        </div>
+    </section>
+    <!--page 3-->
+    <section id="page-3" class="page">
+        <h1>adding Animation property</h1>
+        <div class="para-page-3">
+            <p>This property is a shorthand for about 8 properties . but i used the 3 of them here . and that's works for ther regular use . so the "heading" is the "Animation Name" , the 2s is the "Animation duration" and the "Forwards" is the "Animation-timing-function"</p>
+            <img src="page3.png" alt="">
+        </div>
+        <div>
+            <a href="#page-2" class="btn btn-dark">Prev Page <ion-icon name="arrow-up-outline"
+                    class="btn-icon"></ion-icon></a>
+            <a href="#page-4" class="btn">Next Page <ion-icon name="arrow-down-outline" class="btn-icon"></ion-icon></a>
+        </div>
+    </section>
+    <!-- page 4 -->
+    <section id="page-4" class="page">
+        <!-- <h1>adding @keyframes</h1> -->
+        <div class="para-page-4">
+            <p>so now with @keyframes (Animation Name) {} we have to specify the transform which lead us to the origin point of element to get it back </p>
+            <img src="page 4.png" alt="">
+        </div>
+        <div>
+            <a href="#page-3" class="btn btn-dark">Prev Page <ion-icon name="arrow-up-outline"
+                    class="btn-icon"></ion-icon></a>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+    </script>
+    <script>
+        // Smooth Scrolling
+    $('.btn').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800
+          );
+        }
+      });
+    </script>
+    
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
