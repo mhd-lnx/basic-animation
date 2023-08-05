@@ -61,6 +61,13 @@ div{
 .btn-icon{
     font-size: 2rem;
 }
+.github-link{
+    color: #fff;
+    text-decoration: none;
+    background-color: deepskyblue;
+    padding: 0.3rem;
+    border-radius: 3px;
+}
 /* page 1 */
 #page-2{
     background: #F6F4EB;
@@ -93,7 +100,7 @@ div{
         transform: translate(0);
     }
 }
-#page-1 .para-page-2{
+#page-1 p{
     transform: translate(-1800px,0);
     animation: para 2s forwards 1s;
 }
